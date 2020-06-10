@@ -1,0 +1,20 @@
+.background {
+    display: flex;
+    position: relative;
+    flex: 1;
+    background-color: $desaturated-dark-cyan;
+    width: calc(100% + 16vw);
+    left: -8vw;
+    margin-bottom: 100px;
+
+    img {
+        width: 100%;
+    }
+
+    .bg-mobile { display: none }
+
+    @media screen and (max-width: 860px) {
+        .bg-desktop { display: none }
+        .bg-mobile { display: block }
+    }
+}

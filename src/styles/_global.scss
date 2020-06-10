@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+body {
+    max-width: 1900px;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-color: $light-grayish-cyan-bg;
+
+    @media screen and (max-width: 370px) {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
